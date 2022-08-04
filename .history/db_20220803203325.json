@@ -1,0 +1,17 @@
+{
+    "user": [{
+            "id": 1,
+            "username": "murat63",
+            "name": "Murat",
+            "surname": "Yıldız",
+            "password": "Tsoft.123"
+        },
+        {
+            "id": 2,
+            "username": "admin",
+            "name": "admin",
+            "surname": "admin",
+            "password": "U2FsdGVkX1+2LTObZEYdOnHFN1IKEy2ypBjmKs9lVfQ="
+        }
+    ]
+}
