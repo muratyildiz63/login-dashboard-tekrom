@@ -1,0 +1,35 @@
+.login-right {
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.layout-left-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 320px;
+    max-width: 100%;
+    bottom: 0;
+    z-index: 999;
+    transition: all .5s;
+}
+
+.layout-left-menu ul ul {
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.layout-left-menu ul li:hover ul {
+    height: 100%
+}
+
+#personnelComponents .imgBox {
+    height: 250px;
+}
+
+#personnelComponents p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

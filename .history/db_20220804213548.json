@@ -1,0 +1,42 @@
+{
+    "user": [{
+            "id": 1,
+            "username": "murat63",
+            "name": "Murat",
+            "surname": "Yıldız",
+            "password": "7b22cbb5c5e350127be49ab65674397169ce355b"
+        },
+        {
+            "id": 2,
+            "username": "admin",
+            "name": "admin",
+            "surname": "admin",
+            "password": "7c23eb03c7dac24af62b32f09b3571f802cf5a99"
+        },
+        {
+            "username": "Murat",
+            "name": "Murat",
+            "surname": "Murat",
+            "password": "00d8a7bdec85c11b5be382e79519f2b9f2b0d8fa",
+            "id": 3
+        }
+    ],
+
+    "personnel": [{
+            "id": 1,
+            "Pname": "Mustafa",
+            "psurName": "ERÇEL",
+            "Unvan": "Ar-Ge Takım Liderim",
+            "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
+        },
+        {
+            "id": 1,
+            "Pname": "Murat",
+            "psurName": "YILDIZ",
+            "Unvan": "js Front-End",
+            "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/7.webp"
+        }
+    ]
+}
