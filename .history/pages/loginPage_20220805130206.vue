@@ -228,12 +228,12 @@ export default {
             // Giriş başarılı mesaşını ekrana yazıyor
             this.validUser = true
             console.log(res )
-                   //  index sayfasına yönlendiriyor
-             setTimeout(()=>{
-                 this.$router.push({ name: 'index' })
-             }, 1000);
-        
-           
+              //  index sayfasına yönlendiriyor
+            //  setTimeout(function(){
+            //      console.log()
+            //  }, 1000);
+             
+            // this.$router.push({ name: 'index' })
           
           } else {
             // yanlış bilgiler girdiniz mesajını ekrana basıyor

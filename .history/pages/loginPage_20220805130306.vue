@@ -228,11 +228,11 @@ export default {
             // Giriş başarılı mesaşını ekrana yazıyor
             this.validUser = true
             console.log(res )
-                   //  index sayfasına yönlendiriyor
-             setTimeout(()=>{
+           
+             setTimeout(function(){
                  this.$router.push({ name: 'index' })
              }, 1000);
-        
+                //  index sayfasına yönlendiriyor
            
           
           } else {

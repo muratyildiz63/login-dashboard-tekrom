@@ -61,17 +61,7 @@
             "Unvan": "js Front-End",
             "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-        },
-
-        {
-            "id": 2,
-            "Pname": "Hüseyin",
-            "psurName": "DAŞCI",
-            "Unvan": "Takım Lideri",
-            "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
-            "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/3.webp"
-        },
-        {
+        }, {
             "id": 5,
             "Pname": "Mustafa",
             "psurName": "ERÇEL",
@@ -86,14 +76,6 @@
             "Unvan": "js Front-End",
             "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-        },
-        {
-            "id": 2,
-            "Pname": "Hüseyin",
-            "psurName": "DAŞCI",
-            "Unvan": "Takım Lideri",
-            "shortDescription": " Some quick example text to build on the card title and make up the bulk of the card's content.",
-            "imgURL": "https://mdbcdn.b-cdn.net/img/new/avatars/3.webp"
         }
     ],
     "reference": [{

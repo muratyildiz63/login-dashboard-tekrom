@@ -59,7 +59,7 @@
                     >
                       Giriş başarılı
                     </div>
-                
+                    <form>
                       <p class="mb-4">Kullanıcı Adınız</p>
                       <div class="mb-4">
                         <input
@@ -167,7 +167,7 @@
                           Üye Ol
                         </nuxt-link>
                       </div>
-                 
+                    </form>
                   </div>
                 </div>
                 <div
@@ -219,21 +219,16 @@ export default {
     sessionControl.session2Index()
   },
   methods: {
-     login() {
+    login() {
       const key = 'tsoft123'
       const cryPassword = CryptoJs.HmacSHA1(this.UserPassword, key).toString()
-        apiRequest(`/user?username=${this.userName}&password=${cryPassword}`, 'GET').then(async(res) => {
+        apiRequest(`/user?username=${this.userName}&password=${cryPassword}`, 'GET').then(res => {
           if (res.length > 0) {
-             await localStorage.setItem('userID', res[0].id)
+            localStorage.setItem('userID', res[0].id)
             // Giriş başarılı mesaşını ekrana yazıyor
             this.validUser = true
-            console.log(res )
-                   //  index sayfasına yönlendiriyor
-             setTimeout(()=>{
-                 this.$router.push({ name: 'index' })
-             }, 1000);
-        
-           
+              //  index sayfasına yönlendiriyor
+               this.$router.push({ name: 'index' })
           
           } else {
             // yanlış bilgiler girdiniz mesajını ekrana basıyor

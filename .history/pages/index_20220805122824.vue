@@ -1,5 +1,5 @@
 <template>
-  <div class="p-1 w-full  ">
+  <div class="p-1">
     <div class="flex justify-end">
       <div class="w-1/3 p-2">
         <ChartVisit />
@@ -13,7 +13,21 @@
           alt=""
         />
       </div>
-      
+
+      <div class="mb-4">
+        <img
+          src="https://mdbootstrap.com//img/Photos/Square/1.jpg"
+          class="max-w-full h-auto rounded-full"
+          alt=""
+        />
+      </div>
+      <div class="mb-4">
+        <img
+          src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+          class="max-w-full h-auto rounded-full"
+          alt=""
+        />
+      </div>
     </div>
   </div>
 </template>

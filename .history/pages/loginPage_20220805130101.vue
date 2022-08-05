@@ -59,7 +59,7 @@
                     >
                       Giriş başarılı
                     </div>
-                
+                    <form>
                       <p class="mb-4">Kullanıcı Adınız</p>
                       <div class="mb-4">
                         <input
@@ -117,7 +117,7 @@
                         />
                       </div>
                       <div class="text-center pt-1 mb-12 pb-1">
-                        <button
+                        <div
                           class="
                             inline-block
                             px-6
@@ -140,7 +140,7 @@
                           @click="login"
                         >
                           Giriş Yap
-                        </button>
+                        </div>
                         <nuxt-link
                           to="/registerPage"
                           class="
@@ -167,7 +167,7 @@
                           Üye Ol
                         </nuxt-link>
                       </div>
-                 
+                    </form>
                   </div>
                 </div>
                 <div
@@ -228,12 +228,12 @@ export default {
             // Giriş başarılı mesaşını ekrana yazıyor
             this.validUser = true
             console.log(res )
-                   //  index sayfasına yönlendiriyor
-             setTimeout(()=>{
-                 this.$router.push({ name: 'index' })
-             }, 1000);
-        
-           
+              //  index sayfasına yönlendiriyor
+            //  setTimeout(function(){
+            //      console.log()
+            //  }, 1000);
+             
+            // this.$router.push({ name: 'index' })
           
           } else {
             // yanlış bilgiler girdiniz mesajını ekrana basıyor

@@ -59,7 +59,7 @@
                     >
                       Giriş başarılı
                     </div>
-                
+                    <form>
                       <p class="mb-4">Kullanıcı Adınız</p>
                       <div class="mb-4">
                         <input
@@ -167,7 +167,7 @@
                           Üye Ol
                         </nuxt-link>
                       </div>
-                 
+                    </form>
                   </div>
                 </div>
                 <div
@@ -227,13 +227,12 @@ export default {
              await localStorage.setItem('userID', res[0].id)
             // Giriş başarılı mesaşını ekrana yazıyor
             this.validUser = true
-            console.log(res )
-                   //  index sayfasına yönlendiriyor
-             setTimeout(()=>{
-                 this.$router.push({ name: 'index' })
-             }, 1000);
-        
-           
+              //  index sayfasına yönlendiriyor
+            //  setTimeout(function(){
+            //      console.log()
+            //  }, 1000);
+             
+             this.$router.push({ name: 'index' })
           
           } else {
             // yanlış bilgiler girdiniz mesajını ekrana basıyor

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-1 w-full  ">
+  <div class="p-1">
     <div class="flex justify-end">
       <div class="w-1/3 p-2">
         <ChartVisit />
@@ -13,6 +13,7 @@
           alt=""
         />
       </div>
+
       
     </div>
   </div>
