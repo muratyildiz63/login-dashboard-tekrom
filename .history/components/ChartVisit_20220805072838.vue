@@ -7,16 +7,20 @@
 
 <script>
 import Chart from 'chart.js/auto'
-
+import apiRequest from '../services/apiRequest'
 export default {
   data() {
     return {
-     
+      visitData: [],
     }
   },
 
   mounted() {
-     const ctx = document.getElementById('myChart').getContext('2d')
+   async apiRequest('/visit', 'GET').then((visitRes) => {
+      this.visitData = visitRes
+    })
+
+   await  const ctx = document.getElementById('myChart').getContext('2d')
     const myChart = new Chart(ctx, {
       type: 'bar',
       data: {

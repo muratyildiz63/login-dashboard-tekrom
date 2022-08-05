@@ -274,7 +274,7 @@
                   ></nuxt-link>
                 </li>
                 <li class="nav-item p-2">
-                  <nuxt-link to="/commentPage"
+                  <nuxt-link to="/commnetPage"
                     class="
                       nav-link
                       text-gray-500

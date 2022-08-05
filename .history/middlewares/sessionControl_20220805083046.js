@@ -6,6 +6,8 @@ function sessionControl() {
     apiRequest(`/user?id=${userID}`, 'GET').then(resUser => {
         if (resUser.length < 1) {
             window.location.href = "/loginPage"
+        } else {
+            return
         }
     })
 
@@ -17,6 +19,8 @@ function session2Index() {
     apiRequest(`/user?id=${userID}`, 'GET').then(resUser => {
         if (resUser.length > 0) {
             window.location.href = "/"
+        } else {
+            return
         }
     })
 

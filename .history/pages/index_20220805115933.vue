@@ -1,8 +1,12 @@
 <template>
   <div class=" p-1">
     <ChartVisit />
- 
-
+    <ChartVisit />
+    <ChartVisit />
+    <ChartVisit />
+    <ChartVisit />
+    <ChartVisit />
+    <ChartVisit />
   </div>
 </template>
 <script>

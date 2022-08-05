@@ -1,7 +1,6 @@
 <template>
   <div class=" p-1">
     <ChartVisit />
- 
 
   </div>
 </template>

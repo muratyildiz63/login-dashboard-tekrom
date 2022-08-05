@@ -7,37 +7,24 @@
 
 <script>
 import Chart from 'chart.js/auto'
-
 export default {
-  data() {
-    return {
-     
-    }
-  },
+
+data() {
+  return {
+    visitData:[]
+  }
+},
 
   mounted() {
-     const ctx = document.getElementById('myChart').getContext('2d')
+    const ctx = document.getElementById('myChart').getContext('2d')
     const myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: [
-          'Ocak ',
-          'Şubat',
-          'Mart',
-          'Nisan',
-          'Mayıs',
-          'Haziran',
-          'Temmuz ',
-          'Ağustos',
-          'Eylül',
-          'Ekim',
-          'Kasım',
-          'Aralık',
-        ],
+        labels: ['Ocak ', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran','Temmuz ', 'Ağustos', 'Eylül', 'Ekim', 'Kasım','Aralık'],
         datasets: [
           {
             label: 'Aylara Göre Site Ziyareti',
-            data: [120, 123, 100, 90, 50, 200, 150, 300, 202, 120, 130, 120],
+            data: [120, 123, 100, 90, 50, 200,150,300,202,120,130,120],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',

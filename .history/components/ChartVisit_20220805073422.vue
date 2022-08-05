@@ -7,37 +7,54 @@
 
 <script>
 import Chart from 'chart.js/auto'
-
+import apiRequest from '../services/apiRequest'
 export default {
   data() {
     return {
-     
+      visitData: [],
     }
   },
 
   mounted() {
-     const ctx = document.getElementById('myChart').getContext('2d')
+    apiRequest('/visit', 'GET').then((visitRes) => {
+      this.visitData = visitRes
+    })
+
+    const ctx = document.getElementById('myChart').getContext('2d')
     const myChart = new Chart(ctx, {
       type: 'bar',
       data: {
         labels: [
-          'Ocak ',
-          'Şubat',
-          'Mart',
-          'Nisan',
-          'Mayıs',
-          'Haziran',
-          'Temmuz ',
-          'Ağustos',
-          'Eylül',
-          'Ekim',
-          'Kasım',
-          'Aralık',
+          this.visitData[0].moon,
+          this.visitData[1].moon,
+          this.visitData[2].moon,
+          this.visitData[3].moon,
+          this.visitData[4].moon,
+          this.visitData[5].moon,
+          this.visitData[6].moon,
+          this.visitData[7].moon,
+          this.visitData[8].moon,
+          this.visitData[9].moon,
+          this.visitData[10].moon,
+          this.visitData[11].moon,
         ],
         datasets: [
           {
             label: 'Aylara Göre Site Ziyareti',
-            data: [120, 123, 100, 90, 50, 200, 150, 300, 202, 120, 130, 120],
+            data: [
+              this.visitData[0].siteVisit,
+              this.visitData[1].siteVisit,
+              this.visitData[2].siteVisit,
+              this.visitData[3].siteVisit,
+              this.visitData[4].siteVisit,
+              this.visitData[5].siteVisit,
+              this.visitData[6].siteVisit,
+              this.visitData[7].siteVisit,
+              this.visitData[8].siteVisit,
+              this.visitData[9].siteVisit,
+              this.visitData[10].siteVisit,
+              this.visitData[11].siteVisit,
+            ],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',

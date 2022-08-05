@@ -7,37 +7,57 @@
 
 <script>
 import Chart from 'chart.js/auto'
-
+import apiRequest from '../services/apiRequest'
 export default {
   data() {
     return {
-     
+
     }
   },
 
   mounted() {
-     const ctx = document.getElementById('myChart').getContext('2d')
+let visitData= []
+
+    apiRequest('/visit', 'GET').then((visitRes) => {
+      visitData = visitRes
+      console.log(visitData)
+    })
+
+    const ctx = document.getElementById('myChart').getContext('3d')
     const myChart = new Chart(ctx, {
       type: 'bar',
       data: {
         labels: [
-          'Ocak ',
-          'Şubat',
-          'Mart',
-          'Nisan',
-          'Mayıs',
-          'Haziran',
-          'Temmuz ',
-          'Ağustos',
-          'Eylül',
-          'Ekim',
-          'Kasım',
-          'Aralık',
+          visitData[0].moon,
+          visitData[1].moon,
+          visitData[2].moon,
+          visitData[3].moon,
+          visitData[4].moon,
+          visitData[5].moon,
+          visitData[6].moon,
+          visitData[7].moon,
+          visitData[8].moon,
+          visitData[9].moon,
+          visitData[10].moon,
+          visitData[11].moon
         ],
         datasets: [
           {
             label: 'Aylara Göre Site Ziyareti',
-            data: [120, 123, 100, 90, 50, 200, 150, 300, 202, 120, 130, 120],
+            data: [
+              visitData[0].siteVisit,
+              visitData[1].siteVisit,
+              visitData[2].siteVisit,
+              visitData[3].siteVisit,
+              visitData[4].siteVisit,
+              visitData[5].siteVisit,
+              visitData[6].siteVisit,
+              visitData[7].siteVisit,
+              visitData[8].siteVisit,
+              visitData[9].siteVisit,
+              visitData[10].siteVisit,
+              visitData[11].siteVisit,
+            ],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',

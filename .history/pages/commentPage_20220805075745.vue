@@ -1,14 +1,13 @@
 <template>
   <div class=" p-1">
-    <ChartVisit />
- 
-
+    <CommentsList />
   </div>
 </template>
 <script>
-import ChartVisit from '../components/ChartVisit.vue'
+
+import CommentsList from '../components/commentsList.vue'
 export default {
-  components: { ChartVisit },
+  components: { CommentsList },
   layout: 'dashboardLayout',
   name: 'IndexPage',
 }
